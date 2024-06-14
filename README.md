@@ -36,3 +36,20 @@ The minimax algorithm is a recursive strategy used in decision-making and game t
 - The computer uses a recursive minimax algorithm to determine the optimal move.
 
 For more information on the game, refer to the [Sim (game)](https://en.wikipedia.org/wiki/Sim_(game)) Wikipedia page.
+
+# Sudoku Solver
+
+This project implements a Sudoku solver using a depth-first search (DFS) approach with backtracking. It reads a Sudoku board from the input, solves it, and prints the solution.
+
+## Explanation of the Game
+
+- **Sudoku**: A 9x9 grid puzzle where each cell must contain a number from 1 to 9.
+- **Objective**: Fill the grid so that each row, each column, and each of the nine 3x3 subgrids contains all the digits from 1 to 9 exactly once.
+
+## Solution Approach
+
+1. **Validity Check**: Ensures no duplicate numbers exist in any row, column, or 3x3 subgrid.
+2. **Placement**: Attempts to place numbers in empty cells one by one.
+3. **Backtracking**: If a placement leads to an invalid state, the algorithm backtracks and tries the next number.
+4. **Depth-First Search**: Uses a stack to explore all possible placements until a valid solution is found.
+
