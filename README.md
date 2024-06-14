@@ -1,7 +1,21 @@
 # Smart Game Engines
 ## UpItUp 
 
-This project implements a sliding puzzle game where you move an empty space to arrange the board such that all `1`s are on the top row. It uses Breadth-First Search (BFS) to find the shortest sequence of moves to solve the puzzle. Moves include shifting the empty space up, down, left, or right.
+This program solves a 3x3 sliding puzzle, where the goal is to rearrange numbered tiles from an initial configuration to a solved state. The empty space ('0') allows adjacent tiles to slide into it, facilitating movement.
+
+## Game Description
+
+- **Board**: A 3x3 grid with numbered tiles and an empty space.
+- **Objective**: Rearrange the tiles by sliding them into the empty space to achieve the solved state. Typically, the solved state has tiles arranged in ascending order from left to right, top to bottom, with the empty space in the bottom-right corner.
+- **Moves**: Tiles adjacent to the empty space can move into it, shifting the puzzle's configuration.
+
+## Solution Approach
+
+- **Breadth-First Search (BFS)**: The program utilizes BFS to explore possible moves and find the shortest path to the solved state:
+  - **Visited States**: Tracks visited board configurations to avoid redundant searches and loops.
+  - **Moves Representation**: Each move (up, down, left, right) alters the board state, and valid configurations are enqueued for further exploration.
+  - **Path Reconstruction**: Upon reaching the solved state, traces back through parent pointers to reconstruct the sequence of moves that led to the solution.
+
 ## Rubik's Cube Solver
 
 This project implements a solver for a 2x2x2 Rubik's Cube using Breadth-First Search (BFS). It simulates cube moves and finds the shortest sequence to solve the cube from any given configuration.
