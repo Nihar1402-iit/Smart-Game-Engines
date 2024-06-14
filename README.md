@@ -53,3 +53,22 @@ This project implements a Sudoku solver using a depth-first search (DFS) approac
 3. **Backtracking**: If a placement leads to an invalid state, the algorithm backtracks and tries the next number.
 4. **Depth-First Search**: Uses a stack to explore all possible placements until a valid solution is found.
 
+# Tic-Tac-Toe with Computer
+
+This program allows you to play Tic-Tac-Toe against the computer. The game is played on a 4x4 board, where the goal is to align four marks ('X' or 'O') vertically, horizontally, or diagonally before the opponent does.
+
+## Game Rules
+
+- **Board**: A 4x4 grid where players ('X' and 'O') take turns marking empty spaces.
+- **Objective**: Achieve four consecutive marks ('X' or 'O') in any row, column, or diagonal.
+- **Win Condition**: The player who completes a line of four marks wins the game.
+- **Draw**: If all spaces are filled without any player achieving a line of four, the game ends in a draw.
+
+## Solution Approach
+
+- **Minimax Algorithm**: The computer uses the minimax algorithm with alpha-beta pruning to determine the best move:
+  - **Evaluation**: The algorithm evaluates potential moves recursively to find the optimal move that maximizes its chance of winning or minimizes the chance of losing.
+  - **Depth-Limited Search**: Due to the game's complexity, the algorithm limits its search depth to improve performance.
+  - **Move Encoding**: Each board configuration is encoded into a compact form to store computed moves and avoid redundant computations.
+
+
