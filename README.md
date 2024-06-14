@@ -20,6 +20,13 @@ This project implements a solver for a 2x2x2 Rubik's Cube using Breadth-First Se
 
 This project implements a simple two-player line game where players take turns to select lines on a board. The objective is to create a line of three connected points. The computer uses a recursive minimax strategy to find the best move.
 
+The minimax algorithm is a recursive strategy used in decision-making and game theory to find the optimal move for a player, assuming that the opponent also plays optimally. Here's how it works in this game:
+
+1. **Maximizing Player (RED)**: The algorithm tries to maximize the score for RED. It looks for the move that gives the highest possible score.
+2. **Minimizing Player (BLUE)**: Conversely, the algorithm tries to minimize the score for BLUE. It looks for the move that gives the lowest possible score for RED.
+3. **Recursion**: The algorithm recursively explores all possible moves, simulating each player's turn until it reaches a terminal state (a win, loss, or draw).
+4. **Evaluation**: At each terminal state, the board is evaluated to determine if RED has won, BLUE has won, or if the board is full (draw).
+5. **Backtracking**: The algorithm backtracks, updating scores based on the outcomes of the recursive calls, and selects the move that leads to the best outcome for the current player.
 ## Game Explanation
 
 - The board consists of 15 lines connecting points.
