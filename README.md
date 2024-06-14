@@ -16,3 +16,16 @@ This project implements a solver for a 2x2x2 Rubik's Cube using Breadth-First Se
 - `R2` - Rotate the right face 180 degrees
 - `U2` - Rotate the upper face 180 degrees
 - `F2` - Rotate the front face 180 degrees
+# Sim Game Solver
+
+This project implements a simple two-player line game where players take turns to select lines on a board. The objective is to create a line of three connected points. The computer uses a recursive minimax strategy to find the best move.
+
+## Game Explanation
+
+- The board consists of 15 lines connecting points.
+- Players are represented by `RED` and `BLUE`.
+- Players take turns selecting lines.
+- The goal is to create a line of three connected points.
+- The computer uses a recursive minimax algorithm to determine the optimal move.
+
+For more information on the game, refer to the [Sim (game)](https://en.wikipedia.org/wiki/Sim_(game)) Wikipedia page.
